@@ -1,85 +1,162 @@
 /* Layout rules */
 html {
-	@apply scroll-smooth antialiased;
+  @apply scroll-smooth antialiased;
 }
 body {
-	@apply bg-white text-neutral-500 has-[.header\_\_menu--open]:overflow-hidden lg:has-[.header\_\_menu--open]:overflow-auto dark:bg-neutral-950 dark:text-neutral-400 [.dark_&]:text-neutral-400 [.light_&]:text-neutral-500;
+  @apply bg-white text-neutral-500 dark:bg-neutral-950 dark:text-neutral-400 has-[.header__menu--open]:overflow-hidden lg:has-[.header__menu--open]:overflow-auto;
 }
 
 /* Main typography */
 p {
-	@apply mb-6 last:mb-0;
+  @apply mb-6 last:mb-0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	@apply font-headings text-neutral-700 last:mb-0 dark:text-neutral-50 [&>strong]:text-primary-500 [.dark_&]:text-neutral-50 [.light_&]:text-neutral-700;
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-headings text-neutral-700 dark:text-neutral-50 last:mb-0 [&>strong]:text-primary-500;
 }
+
 h1 strong,
 h2 strong,
 h3 strong,
 h4 strong,
 h5 strong,
 h6 strong {
-	font-weight: inherit;
-}
-h1,
-h2,
-h3 {
-	@apply mb-6 font-bold;
+  font-weight: inherit;
 }
 
-h4,
-h5,
-h6 {
-	@apply mb-4 font-semibold;
+h1, h2, h3 {
+  @apply mb-6 font-bold;
+}
+
+h4, h5, h6 {
+  @apply mb-4 font-semibold;
 }
 
 h1 {
-	@apply text-4xl lg:text-6xl;
+  @apply text-4xl lg:text-6xl;
+  /* Optionally use: text-fluid if you extend it in tailwind.config.js */
 }
 
 h2 {
-	@apply text-3xl lg:text-5xl;
+  @apply text-3xl lg:text-5xl;
 }
 
 h3 {
-	@apply text-2xl lg:text-3xl;
+  @apply text-2xl lg:text-3xl;
 }
 
 h4 {
-	@apply text-xl lg:text-2xl;
+  @apply text-xl lg:text-2xl;
 }
 
 h5 {
-	@apply text-lg lg:text-xl;
+  @apply text-lg lg:text-xl;
 }
 
 h6 {
-	@apply text-base lg:text-lg;
+  @apply text-base lg:text-lg;
 }
+
+/* Links */
 main a {
-	@apply text-primary-500 hover:text-primary-600;
+  @apply text-primary-500 hover:text-primary-600;
 }
+
 .highlight {
-	@apply text-primary-500;
+  @apply text-primary-500;
 }
+
 .small {
-	@apply text-sm font-normal text-neutral-400 dark:text-neutral-500;
+  @apply text-sm font-normal text-neutral-400 dark:text-neutral-500;
 }
-/* Global basic styling */
+
+/* Global basic text styling */
 .basic-text {
-	@apply [&_blockquote]:relative [&_blockquote]:mb-6 [&_blockquote]:rounded [&_blockquote]:border [&_blockquote]:border-neutral-100 [&_blockquote]:bg-neutral-50 [&_blockquote]:p-6 [&_blockquote]:text-lg [&_blockquote]:leading-relaxed [&_blockquote]:text-neutral-700 [&_blockquote]:before:absolute [&_blockquote]:before:left-0 [&_blockquote]:before:top-0 [&_blockquote]:before:z-[0] [&_blockquote]:before:block [&_blockquote]:before:text-9xl [&_blockquote]:before:italic [&_blockquote]:before:text-neutral-200 [&_blockquote]:before:opacity-50 [&_blockquote]:before:content-['"'] lg:[&_blockquote]:-mx-12 dark:[&_blockquote]:border-neutral-600 dark:[&_blockquote]:bg-neutral-700 dark:[&_blockquote]:text-neutral-50 dark:[&_blockquote]:before:text-neutral-600 [&_blockquote_p]:relative [&_blockquote_p]:z-[1] [&_blockquote_p]:px-6 [&_h1:not(:first-child)]:mt-24 [&_h2:not(:first-child)]:mt-24 [&_h3:not(:first-child)]:mt-24 [&_h4:not(:first-child)]:mt-12 [&_img]:rounded [&_img]:border [&_img]:border-neutral-100 dark:[&_img]:border-neutral-600 [&_li]:mb-2 [&_li]:ml-4 [&_li]:list-disc [&_li]:marker:text-primary-500 lg:[&_p:has(img)]:-mx-12;
+  @apply text-base leading-relaxed;
+
+  /* Blockquotes */
+  & blockquote {
+    @apply relative mb-6 rounded border border-neutral-100 bg-neutral-50 p-6 text-lg leading-relaxed text-neutral-700;
+    @apply dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-50;
+  }
+
+  & blockquote::before {
+    @apply absolute left-0 top-0 z-[0] block text-9xl italic text-neutral-200 opacity-50 content-['"'];
+  }
+
+  & blockquote p {
+    @apply relative z-[1] px-6;
+  }
+
+  & img {
+    @apply rounded border border-neutral-100 dark:border-neutral-600;
+  }
+
+  & li {
+    @apply mb-2 ml-4 list-disc marker:text-primary-500;
+  }
+
+  & h1:not(:first-child),
+  & h2:not(:first-child),
+  & h3:not(:first-child) {
+    @apply mt-24;
+  }
+
+  & h4:not(:first-child) {
+    @apply mt-12;
+  }
+
+  /* Optional: negative margins for wide image layouts on large screens */
+  @screen lg {
+    & p:has(img) {
+      @apply -mx-12;
+    }
+
+    & blockquote {
+      @apply -mx-12;
+    }
+  }
 }
+
 .basic-text--lg {
-	@apply text-lg leading-relaxed [&_blockquote]:text-xl [&_blockquote]:leading-loose;
+  @apply text-lg leading-relaxed;
+  
+  & blockquote {
+    @apply text-xl leading-loose;
+  }
+}
+
+/* Buttons (generic base style) */
+button {
+  @apply px-4 py-2 rounded bg-primary-500 text-white hover:bg-primary-600 transition;
+}
+
+/* Inputs, textareas, selects (for forms) */
+input,
+textarea,
+select {
+  @apply w-full p-2 border border-neutral-200 rounded dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 placeholder-neutral-400 dark:placeholder-neutral-500;
 }
 
 /* Scroll animations */
-/* To disable scroll animations remove the class "sroll-animation" from root html in the layout file */
+/* To disable scroll animations, remove "scroll-animation" class from <html> */
 .scroll-animation .col {
-	@apply translate-y-4 transform opacity-0 transition-all duration-1000 [&.scroll-animated]:translate-y-0 [&.scroll-animated]:opacity-100 [&:nth-child(1)]:delay-[50ms] [&:nth-child(10)]:delay-[725ms] [&:nth-child(11)]:delay-[800ms] [&:nth-child(12)]:delay-[875ms] [&:nth-child(2)]:delay-[125ms] [&:nth-child(3)]:delay-[200ms] [&:nth-child(4)]:delay-[275ms] [&:nth-child(5)]:delay-[350ms] [&:nth-child(6)]:delay-[425ms] [&:nth-child(7)]:delay-[500ms] [&:nth-child(8)]:delay-[575ms] [&:nth-child(9)]:delay-[650ms];
+  @apply translate-y-4 transform opacity-0 transition-all duration-1000;
+
+  &.scroll-animated {
+    @apply translate-y-0 opacity-100;
+  }
+
+  &:nth-child(1) { @apply delay-[50ms]; }
+  &:nth-child(2) { @apply delay-[125ms]; }
+  &:nth-child(3) { @apply delay-[200ms]; }
+  &:nth-child(4) { @apply delay-[275ms]; }
+  &:nth-child(5) { @apply delay-[350ms]; }
+  &:nth-child(6) { @apply delay-[425ms]; }
+  &:nth-child(7) { @apply delay-[500ms]; }
+  &:nth-child(8) { @apply delay-[575ms]; }
+  &:nth-child(9) { @apply delay-[650ms]; }
+  &:nth-child(10) { @apply delay-[725ms]; }
+  &:nth-child(11) { @apply delay-[800ms]; }
+  &:nth-child(12) { @apply delay-[875ms]; }
 }
