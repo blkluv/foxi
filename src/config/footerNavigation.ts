@@ -35,13 +35,13 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'RFP.AUCTION',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'The new RFP winning blueprint.',
 		logo: {
 			src: '/logo.svg',
 			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			text: 'RFP.AUCTION'
 		}
 	},
 	footerColumns: [
@@ -59,10 +59,6 @@ export const footerNavigationData: FooterData = {
 				{
 					subCategory: 'Pricing',
 					subCategoryLink: '/pricing'
-				},
-				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
 				},
 				{
 					subCategory: 'Terms',
@@ -106,6 +102,6 @@ export const footerNavigationData: FooterData = {
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© RFP.AUCTION 2025.'
 	}
 }

@@ -21,13 +21,13 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'Foxi. Tailwind CSS Astro Starter Kit by Oxygenna',
+	siteTitle: 'RFP.AUCTION. The new RFP blueprint',
 	siteDescription:
-		'Foxi is a design and development agency that specializes in creating beautiful and functional websites.',
+		'RFP.AUCTION revolutionizes the RFP process, saving companies an average of 20 hours in billed time by eliminating guesswork from questions and submissions. Our blueprint makes RFPs faster, clearer, and more efficient.',
 	ogImage: '/og.jpg',
 	logo: {
 		src: '/logo.svg',
-		alt: 'Foxi. logo'
+		alt: 'RFP.AUCTION logo'
 	},
 	canonical: true,
 	noindex: false,

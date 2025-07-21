@@ -3,16 +3,19 @@
 import { googleAnalyticsMeasurementID } from '../../../src/config/analytics.ts'
 ---
 
-<script
-	type="text/partytown"
-	src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsMeasurementID}`}></script>
+<!-- Google Analytics: Load gtag.js via Partytown -->
+<script 
+  type="text/partytown" 
+  is:inline 
+  src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsMeasurementID}`}>
+</script>
 
-<script type="text/partytown" data-ga-measurement-id={googleAnalyticsMeasurementID} id="ga-init">
-	const measurementId = document.getElementById('ga-init').getAttribute('data-ga-measurement-id')
-	window.dataLayer = window.dataLayer || []
-	function gtag() {
-		dataLayer.push(arguments) // eslint-disable-line
-	}
-	gtag('js', new Date())
-	gtag('config', measurementId)
+<!-- Google Analytics initialization -->
+<script type="text/partytown" is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', '{{googleAnalyticsMeasurementID}}');
 </script>

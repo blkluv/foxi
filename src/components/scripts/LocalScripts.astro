@@ -1,5 +1,5 @@
 <!-- Scripts for UI components -->
-<script async defer>
+<script is:inline async defer>
 	document.addEventListener('astro:page-load', () => {
 		// Menu Dropdown
 		const menuItems = document.querySelectorAll('.header__menu-item')
@@ -74,7 +74,7 @@
 </script>
 
 <!-- Scroll animations -->
-<script>
+<script is:inline>
 	const initializeObserver = () => {
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
@@ -104,8 +104,8 @@
 	})
 </script>
 
-<!-- Light/Dark mode  -->
-<script>
+<!-- Light/Dark mode -->
+<script is:inline>
 	if (document.documentElement.classList.contains('mode-auto')) {
 		const applyTheme = () => {
 			if (

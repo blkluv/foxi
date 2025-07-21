@@ -34,8 +34,8 @@ export interface NavData {
 export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
-		alt: 'The tailwind astro theme',
-		text: 'Foxi.'
+		alt: 'The New RFP blueprint',
+		text: 'RFP.AUCTION'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
@@ -46,12 +46,11 @@ export const navigationBarData: NavData = {
 			link: '#',
 			submenu: [
 				{ name: 'Blog', link: '/blog' },
-				{ name: 'Changelog', link: '/changelog' },
 				{ name: 'FAQ', link: '/faq' },
 				{ name: 'Terms', link: '/terms' }
 			]
 		},
 		{ name: 'Contact', link: '/contact' }
 	],
-	navActions: [{ name: 'Try it now', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Try it now', link: 'https://app.rfp.auction', style: 'primary', size: 'lg' }]
 }
