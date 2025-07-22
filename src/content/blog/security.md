@@ -1,3 +1,4 @@
+---
 title: 'RFP.AUCTION Secured on Blockchain — The Future of Transparent Procurement'
 pubDate: 2024-05-05T05:00:00Z
 description: 'RFP.AUCTION is now powered by the security and transparency of the Polkadot Kusama blockchain. Discover how storing RFPs on-chain solves the legacy challenges of procurement scoring, bias, and access.'
