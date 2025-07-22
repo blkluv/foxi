@@ -1,26 +1,42 @@
 ---
-title: 'Enhancing Team Collaboration'
+title: 'Team Collaboration Just Got Smarter on RFP.AUCTION'
 pubDate: 2024-06-04T05:00:00Z
-description: 'At Foxi, we believe that effective team collaboration is key to achieving great results. Our latest update introduces new features designed to enhance how your team works together.'
+description: 'Collaboration is at the heart of every successful proposal. RFP.AUCTION now makes it easier than ever for teams to ideate, organize, and win—together.'
 author: 'Eleni K'
 image: '/blog/post-05-cover.png'
-tags: ['app', 'announcement']
+tags: ['RFP', 'collaboration', 'teamwork']
 ---
 
-![Foxi is here.](/blog/post-05.png)
+![Teamwork makes the RFP work.](/blog/post-05.png)
 
-At Foxi, we believe that effective team collaboration is key to achieving great results. Our latest update introduces new features designed to enhance how your team works together.
+At **RFP.AUCTION**, we know that the best ideas don't happen in isolation—they’re built together. Our latest platform update introduces powerful new team collaboration features designed to streamline communication, simplify proposal planning, and keep everyone aligned from draft to award.
 
-### New Collaboration Features
+---
 
-- **Shared Task Lists**: Create and share task lists with your team. Keep everyone on the same page and ensure that no task is overlooked.
-- **Team Messaging Enhancements**: We've improved our in-app messaging with new features like message threading, mentions, and file sharing to make communication smoother and more organized.
-- **Collaborative Notes**: Take notes during meetings and brainstorming sessions, and share them with your team instantly. Everyone can contribute and stay updated.
+### 🔧 New Collaboration Features
 
-#### Why Collaboration Matters
+- **Shared Workspaces**  
+  Create shared proposal boards with teammates, assign tasks, and track progress in real time. Whether you're drafting requirements or reviewing responses, everyone stays in sync.
 
-> The strength of the team is each individual member. The strength of each member is the team.
+- **Dynamic Messaging & Mentions**  
+  Easily chat with collaborators, tag team members, and share files—all in one place. Message threading helps keep conversations organized, so nothing gets lost in the scroll.
 
-Effective collaboration leads to better decision-making, faster problem-solving, and a more engaged team. With these new features, Foxi is more equipped than ever to help your team succeed.
+- **Real-Time Proposal Notes**  
+  Capture insights during brainstorms or live RFP reviews. Notes are automatically synced and can be edited collaboratively, ensuring no detail is missed.
 
-Start using these features today and see the difference in your team's productivity and collaboration.
+---
+
+### 🧠 Why Team Collaboration Matters in RFPs
+
+> “The best proposals aren’t written—they’re co-created.”
+
+RFP success depends on clear communication, timely feedback, and shared accountability. With these new features, teams can move faster, align more deeply, and present stronger, unified responses.
+
+---
+
+### 🚀 Built for the New Era of Procurement
+
+Whether you're a vendor building a dream bid or a procurement team sourcing innovation, **RFP.AUCTION** gives you the collaborative tools to get it done—securely, transparently, and together.
+
+Ready to win as a team?  
+Explore the new collaboration features now live on **RFP.AUCTION**.
