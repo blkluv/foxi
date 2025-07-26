@@ -104,48 +104,30 @@
 	})
 </script>
 
-<!-- Light/Dark mode -->
+<!-- Light/Dark mode - Always light by default -->
 <script is:inline>
-	if (document.documentElement.classList.contains('mode-auto')) {
-		const applyTheme = () => {
-			if (
-				localStorage.theme === 'dark' ||
-				(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-			) {
-				document.documentElement.classList.add('dark')
-			} else {
-				document.documentElement.classList.remove('dark')
-			}
+	// Force light mode by default
+	document.documentElement.classList.remove('dark')
+	localStorage.theme = 'light'
+
+	// Optional: Keep theme switcher functionality if needed
+	const setupThemeSwitcher = () => {
+		const themeSwitcher = document.getElementById('theme-selector')
+		if (themeSwitcher) {
+			themeSwitcher.addEventListener('click', () => {
+				if (localStorage.theme === 'dark') {
+					localStorage.theme = 'light'
+					document.documentElement.classList.remove('dark')
+				} else {
+					localStorage.theme = 'dark'
+					document.documentElement.classList.add('dark')
+				}
+			})
 		}
-		const setupThemeSwitcher = () => {
-			const themeSwitcher = document.getElementById('theme-selector')
-			if (themeSwitcher) {
-				themeSwitcher.addEventListener('click', () => {
-					if (localStorage.theme === 'dark') {
-						localStorage.theme = 'light'
-						document.documentElement.classList.remove('dark')
-					} else {
-						localStorage.theme = 'dark'
-						document.documentElement.classList.add('dark')
-					}
-				})
-			}
-		}
-		document.addEventListener('DOMContentLoaded', () => {
-			applyTheme()
-			setupThemeSwitcher()
-		})
-		document.addEventListener('astro:page-loaded', () => {
-			applyTheme()
-			setupThemeSwitcher()
-		})
-		document.addEventListener('astro:after-swap', () => {
-			applyTheme()
-			setupThemeSwitcher()
-		})
-	} else if (document.documentElement.classList.contains('mode-dark')) {
-		document.documentElement.classList.add('dark')
-	} else if (document.documentElement.classList.contains('mode-light')) {
-		document.documentElement.classList.remove('dark')
 	}
+
+	// Initialize theme switcher if present
+	document.addEventListener('DOMContentLoaded', setupThemeSwitcher)
+	document.addEventListener('astro:page-loaded', setupThemeSwitcher)
+	document.addEventListener('astro:after-swap', setupThemeSwitcher)
 </script>

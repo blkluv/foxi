@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Welcome to Foxi! By using our services, you agree to be bound by these terms and conditions. Please read them carefully.
+Welcome to RFP.AUCTION! By using our services, you agree to be bound by these terms and conditions. Please read them carefully.
 
 ## Acceptance of Terms
 
-By accessing or using Foxi, you agree to comply with and be bound by these Terms of Service and our Privacy Policy. If you do not agree with these terms, you should not use our services.
+By accessing or using RFP.AUCTION, you agree to comply with and be bound by these Terms of Service and our Privacy Policy. If you do not agree with these terms, you should not use our services.
 
 ## Changes to Terms
 
@@ -16,7 +16,7 @@ We reserve the right to modify these terms at any time. We will notify you of an
 
 ### Registration
 
-To use certain features of Foxi, you may need to create an account. You agree to provide accurate and complete information when creating your account and to keep this information up-to-date.
+To use certain features of RFP.AUCTION, you may need to create an account. You agree to provide accurate and complete information when creating your account and to keep this information up-to-date.
 
 ### Account Security
 
@@ -30,7 +30,7 @@ We grant you a limited, non-exclusive, non-transferable, and revocable license t
 
 ### Prohibited Activities
 
-You agree not to use Foxi for any unlawful or prohibited activities, including but not limited to:
+You agree not to use RFP.AUCTION for any unlawful or prohibited activities, including but not limited to:
 
 - Violating any applicable laws or regulations
 - Infringing on the intellectual property rights of others
@@ -41,17 +41,17 @@ You agree not to use Foxi for any unlawful or prohibited activities, including b
 
 ### Your Content
 
-You retain ownership of any content you upload to Foxi. By uploading content, you grant us a worldwide, royalty-free, and non-exclusive license to use, reproduce, and display your content for the purpose of operating and improving the service.
+You retain ownership of any content you upload to RFP.AUCTION. By uploading content, you grant us a worldwide, royalty-free, and non-exclusive license to use, reproduce, and display your content for the purpose of operating and improving the service.
 
 ### Our Content
 
-All content provided by Foxi, including text, graphics, logos, and software, is the property of Foxi or its licensors and is protected by intellectual property laws. You may not use, reproduce, or distribute any of our content without our prior written permission.
+All content provided by RFP.AUCTION, including text, graphics, logos, and software, is the property of RFP.AUCTION or its licensors and is protected by intellectual property laws. You may not use, reproduce, or distribute any of our content without our prior written permission.
 
 ## Payment and Billing
 
 ### Subscription Fees
 
-Certain features of Foxi may require a subscription. You agree to pay all applicable fees as described on our pricing page. Fees are non-refundable except as required by law.
+Certain features of RFP.AUCTION may require a subscription. You agree to pay all applicable fees as described on our pricing page. Fees are non-refundable except as required by law.
 
 ### Billing Information
 
@@ -59,7 +59,7 @@ You must provide accurate and up-to-date billing information. You authorize us t
 
 ## Termination
 
-We may terminate or suspend your account and access to Foxi at any time, without prior notice, for conduct that we believe violates these terms or is harmful to other users of the service.
+We may terminate or suspend your account and access to RFP.AUCTION at any time, without prior notice, for conduct that we believe violates these terms or is harmful to other users of the service.
 
 ## Disclaimer of Warranties
 
@@ -77,14 +77,14 @@ These terms are governed by and construed in accordance with the laws of the jur
 
 If you have any questions about these Terms of Service, please contact us at:
 
-Email: support@foxi.com
-Address: 123 Foxi Lane, Productivity City, PC 12345
+Email: win@rfp.auction
+Address: 296 Industrial blvd, Atlanta, GA 30349
 
 ## Miscellaneous
 
 ### Entire Agreement
 
-These terms constitute the entire agreement between you and Foxi regarding the use of the service and supersede any prior agreements.
+These terms constitute the entire agreement between you and RFP.AUCTION regarding the use of the service and supersede any prior agreements.
 
 ### Severability
 
